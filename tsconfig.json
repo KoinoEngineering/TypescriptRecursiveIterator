@@ -8,14 +8,16 @@
         "module": "commonjs",
         "moduleResolution": "node",
         "strict": true,
-        "allowJs": true,
+        "declaration": true,
         "sourceMap": true,
         "inlineSources": true,
         "types": [
             "node"
         ],
         "allowSyntheticDefaultImports": true,
+        "alwaysStrict": true,
         "experimentalDecorators": true,
+        "outDir": "./build"
     },
     "include": [
         "src"

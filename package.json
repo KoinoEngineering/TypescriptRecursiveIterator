@@ -1,28 +1,30 @@
 {
-  "name": "typescriptrecursiveiterator",
-  "version": "1.0.0",
-  "description": "Recursive Iterator with typescript",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KoinoEngineering/TypescriptRecursiveIterator.git"
-  },
-  "keywords": [
-    "typescript",
-    "iterator",
-    "recursive"
-  ],
-  "author": "KoinoEngineering",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/KoinoEngineering/TypescriptRecursiveIterator/issues"
-  },
-  "homepage": "https://github.com/KoinoEngineering/TypescriptRecursiveIterator#readme",
-  "devDependencies": {
-    "@types/node": "^12.7.12",
-    "typescript": "^3.6.4"
-  }
+    "name": "typescriptrecursiveiterator",
+    "version": "1.0.0",
+    "description": "Recursive Iterator with typescript",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc && uglifyjs -c -m --ecma 6 -o ./build/index.min.js -- ./build/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KoinoEngineering/TypescriptRecursiveIterator.git"
+    },
+    "keywords": [
+        "typescript",
+        "iterator",
+        "recursive"
+    ],
+    "author": "KoinoEngineering",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/KoinoEngineering/TypescriptRecursiveIterator/issues"
+    },
+    "homepage": "https://github.com/KoinoEngineering/TypescriptRecursiveIterator#readme",
+    "devDependencies": {
+        "@types/node": "^12.7.12",
+        "typescript": "^3.6.4",
+        "uglify-es": "^3.3.9"
+    }
 }
