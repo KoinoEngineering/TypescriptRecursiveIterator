@@ -4,8 +4,8 @@
     "description": "Recursive Iterator with typescript",
     "main": "index.js",
     "scripts": {
-        "build": "tsc && uglifyjs -c -m --ecma 6 -o ./build/index.min.js -- ./build/index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "npm run test && tsc && uglifyjs -c -m --ecma 6 -o ./build/src/index.min.js -- ./build/src/index.js",
+        "test": "tsc && mocha ./build/test/RecursiveIterator/index.js"
     },
     "repository": {
         "type": "git",
@@ -23,7 +23,9 @@
     },
     "homepage": "https://github.com/KoinoEngineering/TypescriptRecursiveIterator#readme",
     "devDependencies": {
+        "@types/mocha": "^5.2.7",
         "@types/node": "^12.7.12",
+        "mocha": "^6.2.1",
         "typescript": "^3.6.4",
         "uglify-es": "^3.3.9"
     }

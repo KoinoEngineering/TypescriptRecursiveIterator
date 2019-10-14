@@ -20,6 +20,7 @@
         "outDir": "./build"
     },
     "include": [
-        "src"
+        "src",
+        "test"
     ]
 }

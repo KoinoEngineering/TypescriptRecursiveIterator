@@ -1,0 +1,3 @@
+# TypescriptRecursiveIterator
+
+タイプスクリプトで作成した再帰構造イテレータサンプル
